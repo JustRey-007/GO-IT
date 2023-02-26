@@ -3,8 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .All{
-    width: 1260px;
-    height: 1400px;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -22,26 +21,24 @@ p-1{
     width: 300px;
 }
 img{
-    max-width: 300px;
+    max-width: 100%;
     max-height: 300px;
     margin-top: 30px;
 }
 .Contacts{
-    width: 230px;
+    width: 100%;
     height: 150px;
-    margin-left: 30px;
+    padding-left: 30px;
 }
 .Tech-Skills{
     width: 230px;
     height: 250px;
-    margin-left: 30px;
-    margin-top: -10px;
+    padding-left: 30px;
 }
 .Soft-Skills{
     width: 230px;
     height: 250px;
-    margin-left: 30px;
-    margin-top: 0px;
+    padding-left: 30px;
 }
 .right{
     width: 960px;
@@ -51,9 +48,9 @@ img{
 }
 .Top-Text{
     width: 600px;
-    height: 300px;
-    margin-top: 50px;
+    height: 250px;
     margin-left: 120px;
+    padding: 35px 0px 0px 0px;
 }
 .text-text{
     margin-left: -40px;
@@ -67,10 +64,9 @@ h3{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .Projects{
-    width: 600px;
+    width: 580px;
     height: 150px;
     margin-left: 120px;
-    margin-top: -50px;
 }
 h4{
     font-size: 20px;
@@ -87,7 +83,7 @@ i{
 }
 .Work-Experience{
     width: 600px;
-    height: 270px;
+    height: 220px;
     margin-left: 120px;
 }
 h5{
@@ -117,9 +113,8 @@ h6{
 }
 .Manager-Banderogusak{
     width: 600px;
-    height: 230px;
+    height: 170px;
     margin-left: 120px;
-    margin-top: -70px;
 }
 .p-21{
     margin-top: -25px;
@@ -139,9 +134,9 @@ h-7{
 }
 .Manager-BestUA-Corp{
     width: 700px;
-    height: 230px;
+    height: 170px;
     margin-left: 120px;
-    margin-top: -40px;
+    padding: 20px 0px 0px 0px;
 }
 .p-22{
     margin-top: 15px;
@@ -149,12 +144,13 @@ h-7{
 }
 .li-1{
     margin-top: 20px;
+    line-height: 23px;
 }
 .Education{
     width: 700px;
-    height: 230px;
+    height: 150px;
     margin-left: 120px;
-    margin-top: -40px;
+    margin-top: 90px;
 }
 h-8{
     font-size: 23px;
@@ -170,3 +166,629 @@ h-9{
     color: gray;
     margin-top: 15px;
 }
+
+/*-----ADAPTIVE-----*/
+
+@media (max-width: 995px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 50%;
+      padding-top: 55px;
+    }
+    .left {
+        width: 280px;
+    }
+    .texts-1 {
+        display: none;
+    }
+    .texts-3 {
+        display: none;
+    }
+    .texts-5 {
+        display: none;
+    }
+    .three-line {
+        line-height: 50px;
+    }
+    .excerpt {
+        line-height: 22px;
+        
+    }
+  }
+
+  @media (max-width: 995px) {
+    .excerpt:first-child::before {
+      content: "\a";
+      white-space: pre;
+      display: inline-block;
+      width: 55%;
+    }
+  }
+  
+
+  @media (max-width: 920px) {
+    .texts-2 {
+        display: none;
+    }
+    .texts-4 {
+        display: none;
+    }
+    .texts-6 {
+        display: none;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 40%;
+      margin-left: 100px;
+      padding-top: 75px;
+    }
+    .left {
+        width: 260px;
+    }
+    .Projects {
+        margin-left: 100px;
+    }
+    .Work-Experience {
+        margin-left: 100px;
+    }
+    .Manager-Banderogusak {
+        margin-left: 100px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: 100px;
+    }
+    .Education {
+        margin-left: 100px;
+    }
+  }
+
+  @media (max-width: 865px) {
+    .texts-7, .texts-8, .texts-9 {
+        display: none;
+    }
+  }
+
+  @media (max-width: 815px) {
+    .Top-Text {
+        margin-left: 80px;
+    }
+    .Projects {
+        margin-left: 80px;
+    }
+    .texts-10 {
+        display: none;
+    }
+    .text-all-1 {
+        word-break: break-all;
+    }
+    .Work-Experience {
+        margin-left: 80px;
+    }
+    .Manager-Banderogusak {
+        margin-left: 80px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: 80px;
+    }
+    .Education {
+        margin-left: 80px;
+    }
+  }
+
+  @media (max-width: 780px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 35%;
+      margin-left: 60px;
+      padding-top: 95px;
+    }
+    .text-text {
+        font-size: 16px;
+        margin-top: -15px;
+    }
+    .left {
+        width: 240px;
+    }
+    .Contacts {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .Projects {
+        margin-left: 60px;
+    }
+    .Work-Experience {
+        margin-left: 60px;
+        font-size: 15px;
+    }
+    .Manager-Banderogusak {
+        margin-left: 60px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: 60px;
+    }
+    .li-1 {
+        font-size: 14px;
+    }
+    .Education {
+        margin-left: 60px;
+    }
+  }
+
+  @media (max-width: 755px) {
+    .Projects {
+        font-size: 13px;
+    }
+    .Work-Experience {
+        font-size: 14px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 30%;
+      margin-left: 20px;
+      padding-top: 115px;
+    }
+    .text-text {
+        font-size: 14px;
+        margin-top: -20px;
+    }
+    .left {
+        width: 220px;
+    }
+    .Contacts {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    h1 {
+        margin-left: 20px;
+    }
+    .Projects {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .Work-Experience {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    h5 {
+        font-size: 23px;
+    }
+    .Manager-Banderogusak {
+        margin-left: 20px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: 20px;
+    }
+    .Education {
+        margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 635px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 25%;
+      margin-left: -30px;
+    }
+    .text-text {
+        font-size: 13px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .Projects {
+        margin-left: -30px;
+        font-size: 10px;
+        padding-top: 30px;
+    }
+    .Work-Experience {
+        margin-left: -30px;
+        font-size: 13px;
+    }
+    .Manager-Banderogusak {
+        margin-left: -30px;
+    }
+        .Manager-BestUA-Corp {
+        margin-left: -30px;
+    }
+    .li-1 {
+        font-size: 12px;
+    }
+    .Education {
+        margin-left: -30px;
+        font-size: 14px;
+    }
+    h-8 {
+        font-size: 22px;
+    }
+    h-9 {
+        font-size: 15px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 23%;
+      margin-left: -30px;
+    }
+    .text-text {
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    .Projects {
+        padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 23%;
+      margin-left: -60px;
+      padding-top: 135px;
+    }
+    .text-text {
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    .left {
+        width: 200px;
+    }
+    .Projects {
+        padding-top: 30px;
+        margin-left: -60px;
+        font-size: 12px;
+    }
+    .text-all-1, .text-all-2, .text-all-3 {
+        display: none;
+    }
+    .Work-Experience {
+        margin-left: -60px;
+        font-size: 12px;
+    }
+    h-1 {
+        font-size: 15px;
+    }
+    .Manager-Banderogusak {
+        margin-left: -60px;
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    p-20 {
+        font-size: 16px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: -60px;
+    }
+    .li-1 {
+        font-size: 11px;
+    }
+    .p-22 {
+        font-size: 14px;
+    }
+    .Education {
+        margin-left: -60px;
+        font-size: 12px;
+    }
+    h-8 {
+        font-size: 20px;
+    }
+    h-9 {
+        font-size: 13px;
+    }
+  }
+
+  @media (max-width: 490px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 23%;
+      margin-left: -80px;
+      padding-top: 135px;
+    }
+    .text-text {
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    .left {
+        width: 180px;
+    }
+    .Contacts {
+        font-size: 14px;
+    }
+    .Projects {
+        padding-top: 30px;
+        margin-left: -80px;
+        font-size: 12px;
+    }
+    .Work-Experience {
+        margin-left: -80px;
+        font-size: 11px;
+    }
+        .Manager-Banderogusak {
+        margin-left: -80px;
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    p-20 {
+        font-size: 14px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: -80px;
+    }
+    .li-1 {
+        font-size: 10px;
+    }
+    .p-22 {
+        font-size: 12px;
+    }
+    .Education {
+        margin-left: -80px;
+        font-size: 10px;
+    }
+    h-8 {
+        font-size: 18px;
+    }
+    h-9 {
+        font-size: 11px;
+    }
+}
+
+  @media (max-width: 450px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 23%;
+      margin-left: -110px;
+      padding-top: 155px;
+    }
+    .text-text {
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 27px;
+    }
+    .left {
+        width: 160px;
+    }
+    .Contacts {
+        font-size: 12px;
+    }
+    p-25 {
+        font-size: 13px;
+    }
+    .Soft-Skills {
+        padding-left: 15px;
+    }
+    .Tech-Skills {
+        padding-left: 15px;
+    }
+    .Projects {
+        padding-top: 30px;
+        margin-left: -110px;
+        font-size: 12px;
+    }
+    .Work-Experience {
+        margin-left: -110px;
+        font-size: 10px;
+    }
+    .Manager-Banderogusak {
+        margin-left: -110px;
+        font-size: 11px;
+    }
+    h6 {
+        font-size: 13px;
+    }
+    p-20 {
+        font-size: 13px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: -110px;
+    }
+    .li-1 {
+        font-size: 9px;
+    }
+    .p-22 {
+        font-size: 9px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: -110px;
+    }
+    .li-1 {
+        font-size: 9px;
+    }
+    .p-22 {
+        font-size: 9px;
+    }
+    .Education {
+        margin-left: -110px;
+        font-size: 10px;
+    }
+    h-8 {
+        font-size: 17px;
+    }
+    h-9 {
+        font-size: 11px;
+    }
+  }
+
+  @media (max-width: 410px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 23%;
+      margin-left: -130px;
+      padding-top: 175px;
+    }
+    .text-text {
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .left {
+        width: 140px;
+    }
+    .Contacts {
+        font-size: 10px;
+    }
+    p-25 {
+        font-size: 12px;
+    }
+    .wrap {
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .Projects {
+        padding-top: 30px;
+        margin-left: -130px;
+        font-size: 12px;
+    }
+    .Work-Experience {
+        margin-left: -130px;
+        font-size: 10px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .Manager-Banderogusak {
+        margin-left: -130px;
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    p-20 {
+        font-size: 14px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: -130px;
+    }
+    .li-1 {
+        font-size: 8px;
+    }
+    .p-22 {
+        font-size: 10px;
+    }
+    .Education {
+        margin-left: -130px;
+        font-size: 10px;
+    }
+    h-8 {
+        font-size: 16px;
+    }
+    h-9 {
+        font-size: 10px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .Top-Text {
+      flex: 0 0 auto;
+      width: 23%;
+      margin-left: -150px;
+      padding-top: 195px;
+    }
+    .text-text {
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    p-5 {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    .left {
+        width: 120px;
+    }
+    .Contacts {
+        font-size: 8px;
+    }
+    p-25 {
+        font-size: 11px;
+    }
+    .wrap {
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .Projects {
+        padding-top: 30px;
+        margin-left: -150px;
+        font-size: 12px;
+    }
+    .Work-Experience {
+        margin-left: -150px;
+        font-size: 10px;
+    }
+    .Manager-Banderogusak {
+        margin-left: -150px;
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    p-20 {
+        font-size: 14px;
+    }
+    .Manager-BestUA-Corp {
+        margin-left: -150px;
+    }
+    .li-1 {
+        font-size: 9px;
+    }
+    .p-22 {
+        font-size: 9px;
+    }
+    .Education {
+        margin-left: -150px;
+        font-size: 10px;
+    }
+    h-8 {
+        font-size: 16px;
+    }
+    h-9 {
+        font-size: 10px;
+    }
+  }
