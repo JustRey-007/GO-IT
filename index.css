@@ -792,3 +792,11 @@ h-9{
         font-size: 10px;
     }
   }
+  @media (max-width: 365px) {
+    .Work-Experience {
+        font-size: 9.5px;
+    }
+    h-1 {
+        font-size: 13px;
+    }
+  }
